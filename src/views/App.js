@@ -8,6 +8,7 @@ import {createTransitionHook} from '../universalRouter';
 import './normalize.scss';
 
 import Appbar from '../components/Appbar/Appbar.js';
+import Subscribe from '../components/Subscribe/Subscribe.js';
 
 const title = '立委求職中';
 const description = '0.0.1';
@@ -69,6 +70,7 @@ export default class App extends Component {
         <div className={styles.appContent}>
           {this.props.children}
         </div>
+        <Subscribe/>
   
       </div>
     );
